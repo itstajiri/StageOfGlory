@@ -1,0 +1,123 @@
+.items-list .list-row:not(.head-row) {
+    flex-wrap: wrap;
+}
+
+.items-list .list-row .list-col {
+    width: 100%;
+}
+
+.items-list .list-row .rank-col {
+    width: 60px;
+    min-width: 60px;
+}
+
+.items-list .list-row .type-col {
+    width: 165px;
+    min-width: 165px;
+}
+
+.items-list .list-row .attr-col {
+    width: 95px;
+    min-width: 95px;
+}
+
+.items-list .list-row .list-col.icon-col .icon {
+    position: relative;
+}
+
+.items-list .list-row .list-col.icon-col .icon .icon-panel {
+    top: 1px;
+    left: 1px;
+    width: 38px;
+    height: 38px;
+    z-index: 100;
+    position: absolute;
+}
+
+.items-list .list-row .list-col.name-col .name span {
+    margin-left: 1em;
+    font-family: GothamSSm-Light, sans-serif;
+}
+
+.items-list.armor-list .name-col .name {
+    max-width: 411px;
+}
+
+.items-list.default-list .name-col .name {
+    max-width: 596px;
+}
+
+.items-list.weapon-list .name-col .name,
+.items-list.accessory-list .name-col .name {
+    max-width: 315px;
+}
+
+.items-list .name-col .bottom .exchange {
+    display: flex;
+    cursor: default;
+    font-size: 11px;
+    align-items: center;
+    transition: opacity .2s;
+}
+
+.items-list .name-col .bottom .exchange.disallow:not(:hover) {
+    opacity: .5;
+}
+
+.items-list .name-col .bottom .exchange:not(:first-child) {
+    margin-left: 10px;
+}
+
+.items-list .name-col .bottom .exchange:before {
+    margin-right: 2px;
+}
+
+.items-list .name-col .bottom .exchange.allow:before {
+    content: '\2714';
+}
+
+.items-list .name-col .bottom .exchange.disallow:before {
+    content: '\2718';
+}
+
+.items-list .name-col .bottom .availability-btn {
+    margin-left: 15px;
+}
+
+.items-list .name-col .bottom .availability-btn:not(:hover):not(:active) {
+    color: #000;
+}
+
+.items-list.default-list .list-row .type-col {
+    width: 170px;
+    min-width: 170px;
+}
+
+/**
+ * Boxes rewards
+ */
+.items-list.boxes-list .list-row .name-col {
+    max-width: 471px;
+}
+
+.items-list.boxes-list .list-row .list-col.name-col span.enchant {
+    color: #816a9f;
+    margin: 0 .5em 0 0;
+}
+
+.items-list.boxes-list .list-row .count-col {
+    flex-wrap: wrap;
+    min-width: 150px;
+    max-width: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.items-list.boxes-list .list-row:not(.head-row) .count-col {
+    align-items: flex-start;
+}
+
+.items-list.boxes-list .list-row .count-col > div {
+    width: 100%;
+    text-align: center;
+}
