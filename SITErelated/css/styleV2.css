@@ -1,0 +1,373 @@
+.item-header {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+.item-header .item-icon,
+.item-header .item-icon img {
+    width: 52px;
+    height: 52px;
+}
+
+.item-header .item-icon {
+    position: relative;
+    margin-right: 10px;
+}
+
+.item-header .item-icon img {
+    display: block;
+    border-radius: 3px;
+}
+
+.item-header .item-icon img.icon {
+    background: linear-gradient(45deg, #181010, #945539);
+}
+
+.item-header .item-icon img.icon-panel {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.item-header h1.item-desc {
+    width: 100%;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.item-header h1.item-desc span {
+    margin-left: .5em;
+    font-weight: lighter;
+    color: var(--default-text-color);
+}
+
+.item-header h1.item-desc:not(.ng-rank):after {
+    content: '';
+
+    width: 22px;
+    height: 22px;
+    margin-left: 12px;
+    border-radius: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*h1.item-desc.ng-rank:after {
+    width: 32px;
+    background-image: url(/upload/images/ranks/ng-rank.png);
+}*/
+
+.item-header h1.item-desc.d-rank:after {
+    background-image: url(/upload/images/ranks/D.png);
+}
+
+.item-header h1.item-desc.c-rank:after {
+    background-image: url(/upload/images/ranks/C.png);
+}
+
+.item-header h1.item-desc.b-rank:after {
+    background-image: url(/upload/images/ranks/B.png);
+}
+
+.item-header h1.item-desc.a-rank:after {
+    background-image: url(/upload/images/ranks/A.png);
+}
+
+.item-header h1.item-desc.s-rank:after {
+    background-image: url(/upload/images/ranks/S.png);
+}
+
+.item-header h1.item-desc.s80-rank:after {
+    width: 48px;
+    background-image: url(/upload/images/ranks/S80.png);
+}
+
+.item-header h1.item-desc.s84-rank:after {
+    width: 48px;
+    background-image: url(/upload/images/ranks/S84.png);
+}
+
+.item-header h1.item-desc.r-rank:after {
+    background-image: url(/upload/images/ranks/R.png);
+}
+
+.item-header h1.item-desc.r95-rank:after {
+    width: 48px;
+    background-image: url(/upload/images/ranks/R95.png);
+}
+
+.item-header h1.item-desc.r99-rank:after {
+    width: 48px;
+    background-image: url(/upload/images/ranks/R99.png);
+}
+
+.item-header h1.item-desc.r110-rank:after {
+    width: 54px;
+    background-image: url(/upload/images/ranks/R110.png);
+}
+
+h1.item-desc + .item-type,
+.main-item-wrap .main-item-info h5 {
+    width: 100%;
+    font-size: 11px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    /*font-family: GothamSSm-Light, sans-serif;*/
+}
+
+.main-item-wrap {
+    display: flex;
+    margin-bottom: 19px;
+}
+
+.main-item-wrap,
+.tabs-item-wrap {
+    width: 100%;
+}
+
+.main-item-wrap .main-item-info {
+    min-width: 551px;
+    max-width: 551px;
+    padding-right: 55px;
+}
+
+.main-item-wrap .main-item-info h4 {
+    margin: 0 0 15px;
+    line-height: 15px;
+    font-family: GothamSSm-Bold, sans-serif;
+}
+
+.main-item-wrap .main-item-info h5 {
+    color: #000;
+    margin: 5px 0 10px;
+    font-weight: inherit;
+}
+
+.main-item-wrap .item-options {
+    order: 3;
+    width: 100%;
+    flex: 1 1 100%;
+    min-width: 235px;
+    padding-left: 34px;
+    border-left: 1px solid rgba(0, 0, 0, .1);
+}
+
+.main-item-wrap .item-options .options-title {
+    margin: 0;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0;
+    font-weight: normal;
+    font-family: inherit;
+    padding-bottom: 10px;
+}
+
+.main-item-wrap .item-options ul,
+.main-item-wrap .main-item-info ul,
+.main-item-wrap .item-options ul li,
+.main-item-wrap .main-item-info ul li {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    list-style: none;
+    line-height: 15px;
+    letter-spacing: 0;
+    /*color: rgba(0, 0, 0, 0.5);*/
+}
+
+.main-item-wrap .main-item-info ul li {
+    display: flex;
+    align-items: center;
+}
+
+.main-item-wrap .main-item-info ul li.separator {
+    height: 1px;
+    padding-top: 5px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.main-item-wrap .main-item-info ul li.max-use-desc {
+    margin-top: -8px;
+    white-space: nowrap;
+    font-family: GothamSSm-Light, sans-serif;
+}
+
+.main-item-wrap .main-item-info ul li span:last-child {
+    color: #000;
+}
+
+.main-item-wrap .item-options ul li:before,
+.main-item-wrap .main-item-info ul li:before {
+    display: none;
+}
+
+.main-item-wrap .main-item-info ul:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.main-item-wrap .item-options ul li:not(:last-child):not(.separator),
+.main-item-wrap .main-item-info ul li:not(:last-child):not(.separator) {
+    margin-bottom: 10px;
+}
+
+.main-item-wrap .main-item-info ul li.pattack,
+.main-item-wrap .main-item-info ul li.mattack {
+    font-size: 17px;
+    line-height: 17px;
+}
+
+.main-item-wrap .item-options ul + hr,
+.main-item-wrap .main-item-info ul + hr {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.main-item-wrap .main-item-info p {
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.main-item-wrap .item-options ul + h5.options-title {
+    margin-top: 25px;
+}
+
+.main-item-wrap .item-options .options-title.title-can {
+    color: #40ae74;
+}
+
+.main-item-wrap .item-options .options-title.title-cannot {
+    color: #ea4c25;
+}
+
+/**
+ * Enchant effects list
+ */
+.list-wrap.enchant-list-tab .list-row {
+    align-items: flex-start;
+}
+
+.list-wrap.enchant-list-tab .list-row:not(.head-row):nth-child(odd):not(:hover) {
+    background: #f9f9f7;
+}
+
+.list-wrap.enchant-list-tab .list-col {
+    min-height: 40px;
+}
+
+.list-wrap.enchant-list-tab .list-col.level-col {
+    width: 60px;
+    min-width: 60px;
+}
+
+.list-wrap.enchant-list-tab .list-col.rate-col {
+    width: 100px;
+    flex-wrap: wrap;
+    min-width: 100px;
+}
+
+.list-wrap.enchant-list-tab .list-col.rate-col,
+.list-wrap.enchant-list-tab .list-col.level-col {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-wrap.enchant-list-tab .list-col.rate-col > div {
+    width: 100%;
+    text-align: center;
+}
+
+.list-wrap.enchant-list-tab .list-col.rate-col > div + div {
+    font-size: 16px;
+    margin-top: -2px;
+}
+
+.list-wrap.enchant-list-tab .list-col.rate-col > div + div span {
+    font-size: 11px;
+    font-family: GothamSSm-Light, sans-serif;
+}
+
+.list-wrap.enchant-list-tab .list-col.attrs-col,
+.list-wrap.enchant-list-tab .list-col.fail-rewards-col {
+    width: 170px;
+    flex-wrap: wrap;
+    min-width: 170px;
+    align-items: center;
+}
+
+.list-wrap.enchant-list-tab .list-col.fail-rewards-col {
+    width: 250px;
+    min-width: 250px;
+}
+
+.list-wrap.enchant-list-tab .list-col.fail-rewards-col:empty:before {
+    content: '\2014';
+}
+
+.list-wrap.enchant-list-tab .list-col.fail-rewards-col > div {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.list-wrap.enchant-list-tab .list-col.fail-rewards-col > div + div {
+    margin-top: 3px;
+}
+
+.list-wrap.enchant-list-tab .list-col.fail-rewards-col .icon,
+.list-wrap.enchant-list-tab .list-col.fail-rewards-col .icon img {
+    width: 34px;
+    height: 34px;
+    display: block;
+    position: relative;
+    border-radius: 2px;
+}
+
+.list-wrap.enchant-list-tab .list-col.fail-rewards-col .icon .panel {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.list-wrap.enchant-list-tab .list-col.fail-rewards-col .name {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 4px;
+    max-width: calc(100% - 34px);
+}
+
+.list-wrap.enchant-list-tab .list-col.fail-rewards-col .name:not(:hover):not(:active) {
+    color: #000;
+}
+
+.list-wrap.enchant-list-tab .list-col.fail-rewards-col .name > span {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    max-width: 192px;
+    line-height: 17px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.list-wrap.enchant-list-tab .list-col.effect-col {
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.list-wrap.enchant-list-tab .list-col p {
+    margin: 0;
+    width: 100%;
+}
