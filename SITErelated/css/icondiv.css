@@ -1,1 +1,55 @@
-CXC
+.viewer.items .viewer-item-header .item-icon,
+.viewer.skills .skill-header .skill-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    margin-right: 5px;
+    position: relative;
+}
+
+.viewer.items .viewer-item-header .item-icon img,
+.viewer.skills .skill-header .skill-icon img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 2px;
+}
+
+.viewer.items .viewer-item-header .item-icon img:not(.icon-panel) {
+    background: linear-gradient(45deg, #181010, #945539);
+}
+
+.viewer.items .viewer-item-header .item-icon img + .icon-panel,
+.viewer.skills .skill-header .skill-icon img + .icon-panel {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.item-header .item-icon,
+.item-header .item-icon img {
+    width: 52px;
+    height: 52px;
+}
+
+.item-header .item-icon {
+    position: relative;
+    margin-right: 10px;
+}
+
+.item-header .item-icon img {
+    display: block;
+    border-radius: 3px;
+}
+
+.item-header .item-icon img.icon {
+    background: linear-gradient(45deg, #181010, #945539);
+}
+
+.item-header .item-icon img.icon-panel {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
