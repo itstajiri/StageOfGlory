@@ -1,0 +1,155 @@
+    body {
+			line-height: 25px;
+		}
+
+		hr {
+			border: none;
+			height: 1px;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		}
+
+		h2 {
+			clear: both;
+			margin: 0 0 15px;
+			line-height: 25px;
+		}
+
+		img.i_icon {
+			margin: 1px 0;
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		img.class_icon {
+			margin: 1px 0;
+			margin-left: 1.85%;
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		ul {
+			list-style-position: inside;
+		}
+
+		ul:not([style*="list-style"]) {
+			list-style: none;
+		}
+
+		:not([style*="list-style"]) > li:before {
+			content: '\2014\00A0';
+		}
+
+		table {
+			width: 100%;
+			border: none;
+			border-collapse: collapse;
+		}
+
+		table th {
+			color: #dadae0;
+		}
+
+
+		table th {
+			padding: 12px 15px;
+		}
+
+		table td {
+			padding: 5px;
+		}
+
+		table thead th {
+			background-color: #00000033;
+		}
+
+		table thead tr th:last-child {
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+
+		table thead tr th:first-child {
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+		}
+
+		table.no-border-table {
+			margin: 8px 0;
+			line-height: 15px;
+		}
+
+		table.no-border-table th,
+		table.no-border-table td {
+			padding: 7px 7px 8px;
+			vertical-align: middle;
+		}
+
+		table.no-border-table th:last-child,
+		table.no-border-table td:last-child {
+			padding-right: 0;
+		}
+
+		table.no-border-table th:first-child,
+		table.no-border-table td:first-child {
+			padding-left: 0;
+		}
+
+		table.no-border-table tr:not(:first-child) th,
+		table.no-border-table tr:not(:first-child) td {
+			border-top: none;
+		}
+
+		.info {
+			background-color: rgba(0,0,0,0.0);
+			padding: 10px 25px;
+		}
+
+		.info__switch {
+			display: none;
+		}
+
+		.info__body {
+			max-height: 0;
+			overflow: hidden;
+			transition: 0.4s;
+		}
+
+		.info__switch:checked~.info__body {
+			max-height: 2500px;
+		}
+
+		.info__headline::before {
+			content: "";
+			position: absolute;
+			left: -18px;
+			top: 4px;
+			border: 6px solid #808080;
+			border-bottom-color: transparent;
+			border-right-color: transparent;
+			border-left-color: transparent;
+		}
+
+		.info__switch:checked~.info__headline::before {
+			transform: rotate(180deg) translateY(6px);
+		}
+
+		.info__headline {
+			display: block;
+			position: relative;
+			margin-bottom: 15px;
+			user-select: none;
+			color: #808080;
+			font-weight: normal;
+			cursor: pointer;
+		}
+
+		.info__headline:hover {
+			text-decoration: underline;
+		}
+
+		.center {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center
+			width: 50%;
+		}
